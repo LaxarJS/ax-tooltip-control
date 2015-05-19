@@ -1,0 +1,20 @@
+{
+   "name": "laxarjs.ax-tooltip-control",
+   "version": "1.0.0-pre",
+   "description": "",
+   "authors": [],
+   "license": "MIT",
+   "main": "ax-tooltip-control.js",
+   "moduleType": "amd",
+   "ignore": [
+      ".*",
+      "Gruntfile.js",
+      "node_modules",
+      "bower_components"
+   ],
+   "dependencies": {
+      "jquery": "^1.11.x",
+      "laxar": "^1.0.0-alpha.12",
+      "bootstrap-sass-official": "twbs/bootstrap-sass#3.3.x"
+   }
+}
