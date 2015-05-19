@@ -1,7 +1,7 @@
 {
-   "name": "laxarjs.ax-tooltip-control",
+   "name": "laxar-tooltip-control",
    "version": "1.0.0-pre",
-   "description": "",
+   "description": "Wraps the Bootstrap tooltip component as an AngularJS directive, for LaxarJS widgets.",
    "authors": [],
    "license": "MIT",
    "main": "ax-tooltip-control.js",

@@ -1,5 +1,6 @@
 {
    "name": "ax-tooltip-control",
+
    "integration": {
       "technology": "angular"
    }

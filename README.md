@@ -1,6 +1,6 @@
 # AxTooltipControl
 
-> An AngularJS directive wrapper for the Bootstrap tooltip component, for use in LaxarJS widgets 
+> Wraps the Bootstrap tooltip component as an AngularJS directive, for LaxarJS widgets.
 
 
 ## Installation
@@ -13,20 +13,30 @@ For general information on installing, styling and optimizing controls, have a l
 Install the control:
 
 ```sh
-bower install laxarjs.ax-tooltip-control
+bower install laxar-tooltip-control
 ```
-Add `bootstrap-tooltip` and (if you haven't already) `jquery` as a RequireJS path.
-Assuming that your `baseUrl` is `'bower_components'`, add this to the `paths` section in your `require_config.js`.
+
+Make sure that `bootstrap` and `jquery` can be found by RequireJS.
+For example, assuming that your `baseUrl` is `'bower_components'`, add this to the `paths` section of your `require_config.js`:
 
 ```js
-   jquery: 'jquery/dist/jquery',
-   'bootstrap-tooltip': 'bootstrap-sass-official/assets/javascripts/bootstrap/tooltip'
+jquery: 'jquery/dist/jquery',
+'bootstrap': 'bootstrap-sass-official/assets/javascripts/bootstrap'
 ```
 
-Reference the control from the `widget.json` of your widget:
+Additionally, it is necessary to specify the correct load order by adding a `shim` entry:
+
+```js
+shim: {
+   // ...
+   'bootstrap/tooltip': [ 'jquery' ]
+}
+```
+
+Now you may reference the control from the `widget.json` of your widget:
  
 ```json
-   "controls": [ "laxarjs.ax-tooltip-control" ]
+"controls": [ "laxar-tooltip-control" ]
 ```
 
 

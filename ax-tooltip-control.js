@@ -6,7 +6,7 @@
 define( [
    'angular',
    'jquery',
-   'bootstrap-tooltip'
+   'bootstrap/tooltip'
 ], function( ng, $ ) {
    'use strict';
 
@@ -105,10 +105,6 @@ define( [
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   return {
-      createForModule: function( module ) {
-         module.directive( directiveName, directive );
-      }
-   };
+   return ng.module( directiveName + 'Control', [] ).directive( directiveName, directive );
 
 } );
