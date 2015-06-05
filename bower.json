@@ -14,7 +14,7 @@
    ],
    "dependencies": {
       "jquery": "^1.11.x",
-      "laxar": "^1.0.0-alpha.14",
+      "laxar": "^1.0.0",
       "bootstrap-sass-official": "twbs/bootstrap-sass#3.3.x"
    }
 }
