@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v1.0.1
+
 - [#2](https://github.com/LaxarJS/ax-tooltip-control/issues/2): clearing interval on destroy now
 
 
