@@ -32,6 +32,17 @@ define( [
                container: $container
             } );
 
+            var toolTipShowing = false;
+            scope.$watch( attrs[ directiveName ], function( newTitle ) {
+               if( toolTipShowing ) {
+                  $element.tooltip( {
+                     title: newTitle,
+                     container: $container
+                  } );
+                  $element.tooltip( 'show' );
+               }
+            } );
+
             //////////////////////////////////////////////////////////////////////////////////////////////////
 
             scope.$on( '$destroy', function() {
@@ -86,9 +97,11 @@ define( [
             // Workarounds to prevent a sticky tooltip on navigation
             $element.on( 'show.bs.tooltip', function() {
                $container.appendTo( 'body' );
+               toolTipShowing = true;
             } );
 
             $element.on( 'hidden.bs.tooltip', function() {
+               toolTipShowing = false;
                $container.detach();
             } );
 
