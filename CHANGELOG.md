@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v1.1.1
+
 - [#4](https://github.com/LaxarJS/ax-tooltip-control/issues/4): fixed displaying multiple tooltips when scrolling
 
 
